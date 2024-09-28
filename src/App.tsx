@@ -30,7 +30,7 @@ const App: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 z-10">
         <TaskBar />
       </div>
-      <div className="relative bg-white bg-cover bg-center bg-no-repeat min-h-screen overscroll-y-none">
+      <div className="relative bg-white bg-cover bg-center bg-no-repeat min-h-screen overscroll-y-none px-32">
         <div className="pt-20 flex flex-col items-center justify-center min-h-screen">
           <AnimatedSection>
             <section id="about">

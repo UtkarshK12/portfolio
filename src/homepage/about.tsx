@@ -40,7 +40,7 @@ const About: React.FC = () => {
     ];
 
     return (
-        <div className="flex flex-row items-center justify-between gap-24">
+        <div className="flex flex-row items-center justify-center gap-20">
             <div className="backdrop:filter bg-white bg-opacity-30 rounded-lg p-10 flex flex-col justify-center items-start gap-6 w-full max-w-2xl mx-auto">
                 <div>
                     <h1 className='text-gray-700 text-5xl font-bold font-serif mb-4'>Hi, I am {name}! 🙋🏻</h1>

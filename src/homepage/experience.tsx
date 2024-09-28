@@ -38,7 +38,7 @@ function Experience() {
    
   return (
     <div>
-      <div className="text-gray-700 font-bold text-4xl font-serif min-w-screen flex justify-center items-center mx-auto">
+      <div className="text-gray-700 font-bold text-4xl font-serif min-w-screen flex justify-center items-center mx-auto p-4">
         Experience
       </div>
       <div className="h-8"></div>
