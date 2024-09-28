@@ -15,7 +15,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
   return (
     <div 
       ref={ref} 
-      className={`transition-opacity duration-1000 ease-in-out ${
+      className={`transition-opacity relative duration-1000 ease-in-out ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
@@ -26,35 +26,39 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
 
 const App: React.FC = () => {
   return (
-    <div className="relative bg-white bg-cover bg-center bg-no-repeat min-h-screen">
-      <div className="absolute top-0 left-0 right-0 z-0">
+    <div className=' overscroll-y-none'>
+      <div className="absolute top-0 left-0 right-0 z-10">
         <TaskBar />
       </div>
-      <div className="pt-20 flex flex-col items-center justify-center min-h-screen">
+      <div className="relative bg-white bg-cover bg-center bg-no-repeat min-h-screen overscroll-y-none">
+        <div className="pt-20 flex flex-col items-center justify-center min-h-screen">
+          <AnimatedSection>
+            <section id="about">
+            <About />
+            </section>
+          </AnimatedSection>
+        </div>
         <AnimatedSection>
-          <section id="about">
-          <About />
+        <section id="projects">
+          <Projects />
+          </section>
+        </AnimatedSection>
+        <div className='h-20'></div>
+        <AnimatedSection>
+        <section id="blogs">
+          <Blogs />
+          </section>
+        </AnimatedSection>
+        <div className='h-20'></div>
+        <AnimatedSection>
+        <section id="experience">
+          <Experience></Experience>
           </section>
         </AnimatedSection>
       </div>
-      <AnimatedSection>
-      <section id="projects">
-        <Projects />
-        </section>
-      </AnimatedSection>
-      <div className='h-20'></div>
-      <AnimatedSection>
-      <section id="blogs">
-        <Blogs />
-        </section>
-      </AnimatedSection>
-      <div className='h-20'></div>
-      <AnimatedSection>
-      <section id="experience">
-        <Experience></Experience>
-        </section>
-      </AnimatedSection>
     </div>
+    
+    
   );
 }
 

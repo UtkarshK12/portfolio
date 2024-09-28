@@ -23,7 +23,7 @@ function TaskBar() {
     };
 
     return (
-        <div ref={taskBarRef} className="shadow-lg backdrop-filter backdrop-blur-md bg-gray-800 border-white border-gray-200 flex flex-row justify-items-center p-5 items-center gap-10 w-full top-0 z-50">
+        <div ref={taskBarRef} className="shadow-lg backdrop-filter backdrop-blur-md bg-gray-800 border-white border-gray-200 flex flex-row justify-items-center p-5 items-center gap-10 w-full top-0 z-1000 fixed">
             <div className="max-w-4xl w-full flex justify-between items-center text-gray-700 text-xl">
                 <div className="flex gap-10 font-mono text-gray-100">
                     <span onClick={() => scrollToSection('about')} className="cursor-pointer hover:text-gray-300">About</span>
