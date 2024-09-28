@@ -53,7 +53,7 @@ const About: React.FC = () => {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+                            className="text-gray-600 hover:text-red-900 transition-colors duration-300"
                         >
                             <link.icon size={24} />
                         </a>

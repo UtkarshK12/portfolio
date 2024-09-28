@@ -28,7 +28,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ companyDetail }) => {
                 </li>
               ))}
             </ul>
-            <div className='h-10'></div>
+             <div className='h-10'></div>
           </div>
         ));
       }
@@ -43,7 +43,7 @@ const CompanyDetails: React.FC<CompanyDetailsProps> = ({ companyDetail }) => {
         <h2 className="text-md">{companyDetail.duration}</h2>
         {companyDetail.position && <h2 className="text-md">{companyDetail.position}</h2>}
       </div>
-      <div className="text-gray-600 text-lg">
+      <div className="text-gray-600 text-lg w-full p-4 pr-4  ">
         {renderDescription(companyDetail.description)}
       </div>
     </div>

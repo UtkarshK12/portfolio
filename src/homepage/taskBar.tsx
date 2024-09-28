@@ -1,4 +1,4 @@
-import  { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 function TaskBar() {
     const taskBarRef = useRef<HTMLDivElement>(null);
@@ -6,7 +6,7 @@ function TaskBar() {
     useEffect(() => {
         if (taskBarRef.current) {
             const height = taskBarRef.current.offsetHeight;
-            document.documentElement.style.setProperty('--taskbar-height', `${height + 40}px`);
+            document.documentElement.style.setProperty('--taskbar-height', `${height + 20}px`);
         }
     }, []);
 
@@ -23,7 +23,7 @@ function TaskBar() {
     };
 
     return (
-        <div ref={taskBarRef} className="shadow-lg backdrop-filter backdrop-blur-md bg-gray-800 border-white border-gray-200 flex flex-row justify-items-center p-5 items-center gap-10 w-full top-0 z-10">
+        <div ref={taskBarRef} className="shadow-lg backdrop-filter backdrop-blur-md bg-gray-800 border-white border-gray-200 flex flex-row justify-items-center p-5 items-center gap-10 w-full top-0 z-50">
             <div className="max-w-4xl w-full flex justify-between items-center text-gray-700 text-xl">
                 <div className="flex gap-10 font-mono text-gray-100">
                     <span onClick={() => scrollToSection('about')} className="cursor-pointer hover:text-gray-300">About</span>
