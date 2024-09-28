@@ -43,6 +43,7 @@ export default function Blogs () {
                             key={blogs.id || index} 
                             title={blogs.blogs_title} 
                             detail={blogs.blogs_detail}
+                            url={blogs.blogs_url}
                         ></Blog>
                     ))
                     }

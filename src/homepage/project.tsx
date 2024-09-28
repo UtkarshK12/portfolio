@@ -1,24 +1,28 @@
-
 interface ProjectProps {
-    title: string;
-    detail: string;
-  }
+  title: string;
+  detail: string;
+  url: string;
+}
 
-export default function Project({title, detail}:ProjectProps) {
-
-    return (
-      <div className="flex flex-col min-h-[300px] max-h-[300px] bg-opacity-30  backdrop:filter bg-[#aac1c2] opacity-80  rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1">
-        <div className="p-10 flex flex-col h-full">
-          <h2 className="text-2xl font-bold mb-4 font-serif">{title}</h2>
-          <p className="flex-grow ">
-            {detail}
-          </p>
-          <div className="mt-4">
-            <button className="bg-gray-900 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded">
-              Check it out
-            </button>
-          </div>
+export default function Project({title, detail, url}: ProjectProps) {
+  return (
+    <div className="flex flex-col min-h-[300px] max-h-[300px] rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 ease-in-out">
+      <div className="p-10 flex flex-col h-full bg-[#aac1c2] bg-opacity-30 backdrop-filter backdrop-blur-sm">
+        <h2 className="text-2xl font-bold mb-4 font-serif">{title}</h2>
+        <p className="flex-grow">
+          {detail}
+        </p>
+        <div className="mt-4">
+          <a 
+            href={url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-block bg-gray-900 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
+          >
+            Check it out
+          </a>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}

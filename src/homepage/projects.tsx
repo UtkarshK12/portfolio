@@ -41,6 +41,7 @@ export default function Projects(){
                             key={project.id || index} 
                             title={project.project_title} 
                             detail={project.project_breif}
+                            url={project.project_url}
                         ></Project>
                     ))}
         </div>

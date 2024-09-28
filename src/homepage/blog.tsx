@@ -1,22 +1,28 @@
 interface BlogProps {
-    title: string;
-    detail: string;
-  }
+  title: string;
+  detail: string;
+  url: string;
+}
 
-export default function Blog ({title, detail}:BlogProps){
-    return (
-        <div className="flex flex-col min-h-[300px] max-h-[300px] bg-opacity-30  backdrop:filter bg-[#d7ca86] opacity-80  rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1">
-          <div className="p-10 flex flex-col h-full">
-            <h2 className=" text-2xl font-bold mb-4 font-serif">{title}</h2>
-            <p className="flex-grow ">
-              {detail}
-            </p>
-            <div className="mt-4">
-              <button className="bg-gray-900 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded">
-                Check it out
-              </button>
-            </div>
-          </div>
+export default function Blog({title, detail, url}: BlogProps) {
+  return (
+    <div className="flex flex-col min-h-[300px] max-h-[300px] rounded-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 ease-in-out">
+      <div className="p-10 flex flex-col h-full bg-[#d7ca86] bg-opacity-30 backdrop-filter backdrop-blur-sm">
+        <h2 className="text-2xl font-bold mb-4 font-serif">{title}</h2>
+        <p className="flex-grow">
+          {detail}
+        </p>
+        <div className="mt-4">
+          <a 
+            href={url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-block bg-gray-900 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out shadow-md hover:shadow-lg"
+          >
+            Read More
+          </a>
         </div>
-      );
- }
+      </div>
+    </div>
+  );
+}
