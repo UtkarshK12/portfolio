@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 
 function TaskBar() {
     const taskBarRef = useRef<HTMLDivElement>(null);

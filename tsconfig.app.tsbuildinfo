@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/blog.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/homepage/about.tsx","./src/homepage/blog.tsx","./src/homepage/blogs.tsx","./src/homepage/companies.tsx","./src/homepage/experience.tsx","./src/homepage/project.tsx","./src/homepage/projects.tsx","./src/homepage/taskbar.tsx","./src/homepage/hooks/usescroll.tsx"],"version":"5.6.2"}
