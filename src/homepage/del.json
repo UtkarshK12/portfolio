@@ -1,0 +1,40 @@
+{
+    "experience": [
+      {
+        "company": "Accenture",
+        "location": "Tokyo, Japan",
+        "duration": "Jan, 2021 - Present",
+        "description": [
+          {
+            "Securities Domain (Developer)": [
+              {
+                "text": "Designed, developed, maintained, tested, and deployed multiple integration modules for a leading securities client, facilitating the integration of various systems and messaging queues using Spring Boot, Java, Oracle SQL, and Bash Scripting. Also creation and maintenance of several deployment environments."
+              },
+              {
+                "text": "Create and optimized trade processing, enabling the modules to handle and target over 100,000 real-time and end-of-day daily trades."
+              },
+              {
+                "text": "Enhanced test coverage on existing modules, increasing from approximately 5% to over 80%, ensuring compliance with SonarQube quality gates."
+              },
+              {
+                "text": "Significantly improved performance of critical modules. Reducing processing time of a module from approximately 15 minutes to under 7 seconds in one notable case."
+              }
+            ]
+          },
+          {
+            "Securities Domain (SRE/DevOps)": [
+              "Managed SRE/DevOps responsibilities for a major securities firm, implementing multiple CI/CD pipelines using Jenkins, GitLab, Docker, maven etc.",
+              "Created and maintained multiple environments, including UAT, SIT, and Production servers, while providing ongoing support and troubleshooting."
+            ]
+          },
+          {
+            "Insurance Domain": [
+              "Designed, developed, maintained, and tested an insurance suite for a major insurance company as part of a white-label project using Java and C.",
+              "Collaborated with clients to gather requirements and led an overseas development team, successfully delivering the product on time",
+              "Created stub tools using NodeJS and ReactJS for internal testing and monitoring."
+            ]
+          }
+        ]
+      }
+    ]
+  }
